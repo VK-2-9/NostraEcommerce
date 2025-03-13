@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar section */
+.navbar p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width:600px) {
+    *{
+        font-size: 10px;
+    }
+}
