@@ -26,22 +26,34 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 </head>
 <body>
     <!-- offer section -->
-     <section id="offer" class=" bg-black text-white text-xl flex h-10 justify-center align-middle items-center gap-28" >
+     <section id="offer" class=" bg-gray-800 text-white text-xl flex h-10 justify-center align-middle items-center gap-28" >
         <h1 >Sign up and <span class="font-bold"> GET 20% OFF</span> for your first Order</h1>
         <p id="offer-close" class="cursor-pointer "  >X</p>
      </section>
 <!--navbar section-->
-<section class="navbar  flex justify-between items-center m-5">
+<section class="navbar flex justify-between items-center  sticky z-10  top-0 bg-white p-8 md:p-5 ">
     <h1 class="text-2xl font-bold ">Nostra</h1>
 
-    <i class="fa-solid fa-bars md:hidden"></i>
+    <i id="menu-open" class="fa-solid fa-bars md:hidden text-4xl"></i>
 
     <div class="hidden gap-9 md:flex">
-        <p>Home</p>
-        <p>New Arrival</p>
-        <p>Most Wanted</p>
-        <p>Collections</p>
-        <p>Contact Us</p>
+        <a href="./index.html">Home</a>
+        <a>New Arrival</a>
+        <a>Most Wanted</a>
+        <a>Collections</a>
+        <a>Contact Us</a>
+    </div>
+</section>
+
+<!--side navbar-->
+<section >
+    <div id="sidenav" class="sidenav bg-gray-800 p-10 flex flex-col gap-16 text-white w-1/2 fixed z-50 h-full top-0 transition-all duration-1000" style="left: -50%;" >
+        <h1 id="menu-close" class="text-3xl text-right">X</h1>
+        <a href="./index.html">Home</a>
+        <a>New Arrival</a>
+        <a>Most Wanted</a>
+        <a>Collections</a>
+        <a>Contact Us</a>
     </div>
 </section>
 
@@ -54,9 +66,9 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <i  class="fa-solid fa-angle-left"></i>
     </div>
 
-    <div class="slider-content text-white absolute top-1/2 left-48 text-center transform -translate-y-3/4" >
+    <div class="slider-content text-white absolute top-1/2 text-center transform -translate-y-1/2" style="left:25%">
         <h1 class="text-6xl font-bold">Level up your style with our</h1>
-        <p class="font-semibold mt-5 ">Summer Collections</p>
+        <p class="font-semibold mt-5 text-2xl">Summer Collections</p>
         <button class="bg-white border-2 text-black p-3 mt-2 hover:opacity-90 duration-1000  hover:text-white hover:bg-black">Shop Now➜</button>
 
     </div>
@@ -112,17 +124,160 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 </section>
 
 <!--qualities section-->
-<section class="m-4 mt-16">
+<section class=" qualities m-4 mt-16">
     <div class="flex justify-between">
     <h1 class="font-bold text-3xl w-96">We Provide Best Customer Experiences</h1>
     <p class="text-xl">|| We ensure that our customer have the best shopping experience</p>
-</div>
+    </div>
+
+    <div class="flex gap-3 mt-5">
+        <div class="bg-gray-200 p-3 border rounded ">
+            <i class="fa-regular fa-circle-check text-5xl mb-2"></i>
+            <h1 class="font-bold ">Original Products</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+
+        <div class="bg-gray-200 p-3 border rounded">
+            <i  class="fa-regular fa-face-smile text-5xl mb-2"></i>
+            <h1 class="font-bold">Satisfaction Guarantee</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+
+        <div class="bg-gray-200 p-3 border rounded">
+            <i  class="fa-solid fa-broom text-5xl mb-2"></i>
+            <h1 class="font-bold">New Arrival Everyday</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+
+        <div class="bg-gray-200 p-3 border rounded">
+            <i class="fa-solid fa-truck-fast text-5xl mb-2"></i>
+            <h1 class="font-bold">Fast & Free Shipping</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+    </div>
 </section>
         
 
+<!--new arrivals-->
+<section class="arrival m-5 mt-12">
+    <h1 class="font-bold text-2xl">New Arrivals</h1>
+    <div class="flex justify-between gap-8 mt-8">
+        <div class="na-container">
+            <img src="./images/na1.jpg" >
+            <div class="na-overlay"></div>
+            <button class="text-xs p-2 w-24 md:text-xl md:w-36">Shop Now➜</button>
+        </div>
+
+        <div class="na-container">
+            <img src="./images/na2.jpg" >
+            <div class="na-overlay"></div>
+            <button class="text-xs p-2 w-24 md:text-xl md:w-36" >Shop Now➜</button>
+        </div>
+
+        <div class="na-container">
+            <img src="./images/na3.jpg" >
+            <div class="na-overlay"></div>
+            <button class="text-xs p-2 w-24 md:text-xl md:w-36">Shop Now➜</button>
+        </div>
+
+        <div class="na-container">
+            <img src="./images/na4.jpg" >
+            <div class="na-overlay"></div>
+            <button class="text-xs p-2 w-24 md:text-xl md:w-36">Shop Now➜</button>
+        </div>
+    </div>
+</section>
 
 
+<!--Most wanted-->
+<section class="mw m-5 mt-12">
+    <h1 class="font-bold text-2xl">Most Wanted</h1>
+    <div class="most-wanted mt-8 ">
 
+        <div class="mw-container w-56 md:w-80">
+            <img src="./images/mw1.jpg">
+            <p class="text-xl pb-1 pt-1 p-2 md:p-2 md:pl-5 md:pr-5">sale</p>
+            <i class="fa-regular fa-heart text-3xl md:text-5xl"></i>
+        </div  >
+
+        <div class="mw-container w-56 md:w-80">
+            <img src="./images/mw2.jpg">
+            <p class="text-xl pb-1 pt-1 p-2 md:p-2 md:pl-5 md:pr-5">sale</p>
+            <i class="fa-regular fa-heart text-3xl md:text-5xl"></i>
+        </div  >
+
+        <div class="mw-container w-56 md:w-80">
+            <img src="./images/mw3.jpg">
+            <p class="text-xl pb-1 pt-1 p-2 md:p-2 md:pl-5 md:pr-5">sale</p>
+            <i class="fa-regular fa-heart text-3xl md:text-5xl"></i>
+        </div  >
+
+        <div class="mw-container w-56 md:w-80">
+            <img src="./images/mw4.jpg">
+            <p class="text-xl pb-1 pt-1 p-2 md:p-2 md:pl-5 md:pr-5">sale</p>
+            <i class="fa-regular fa-heart text-3xl md:text-5xl"></i>
+        </div  >
+
+        <div class="mw-container w-56 md:w-80">
+            <img src="./images/mw5.jpg">
+            <p class="text-xl pb-1 pt-1 p-2 md:p-2 md:pl-5 md:pr-5">sale</p>
+            <i class="fa-regular fa-heart text-3xl md:text-5xl"></i>
+        </div  >
+
+        <div class="mw-container w-56 md:w-80">
+            <img src="./images/mw6.jpg">
+            <p class="text-xl pb-1 pt-1 p-2 md:p-2 md:pl-5 md:pr-5">sale</p>
+            <i class="fa-regular fa-heart text-3xl md:text-5xl"></i>
+        </div  >
+
+        <div class="mw-container w-56 md:w-80">
+            <img src="./images/mw7.jpg">
+            <p class="text-xl pb-1 pt-1 p-2 md:p-2 md:pl-5 md:pr-5">sale</p>
+            <i class="fa-regular fa-heart text-3xl md:text-5xl"></i>
+        </div  >
+
+        <div class="mw-container w-56 md:w-80">
+            <img src="./images/mw8.jpg">
+            <p class="text-xl pb-1 pt-1 p-2 md:p-2 md:pl-5 md:pr-5">sale</p>
+            <i class="fa-regular fa-heart text-3xl md:text-5xl"></i>
+        </div >
+    </div>
+</section>
+
+<!--Limited offer-->
+<section class="limited-offer  m-5 mt-8 p-5 md:p-10 md:pl-20 bg-gray-900 relative  ">
+    <div>
+        <img src="./images/limited-offer.jpg" class="w-96 md:w-2/5">
+    </div>
+
+    <div class=" text-white absolute top-1/2 left-2/4  md:left-1/2 transform -translate-y-1/2 ">
+        <h1 class="font-bold text-3xl md:text-6xl ">Limited Offer</h1>
+        <p class="font-semibold text-xl md:text-3xl mt-4">35% OFF on this for the first 30 Customers</p>
+        <button class="text-xs p-2 w-24 md:text-xl md:w-36 mt-4">Shop Now➜</button>
+    </div>
+</section>
+
+<!--newsletter section-->
+<section class="newsletter m-5 mt-20 text-center">
+    <h1 class="text-5xl font-bold mb-5">Join our News Letter</h1>
+    <p class="text-2xl mb-5">Signup for our email newspaper to get exclusive discounts, updates, and more </p>
+    <input type="text" class="border-2 border-black w-3/4 h-10  p-2 mb-4"><br>
+    <button class="text-xs p-2 w-24 md:text-xl md:w-36 mt-4  rounded-xl">Subscribe ➜</button>
+
+</section>
+
+<!--footer section-->
+<section class="bg-gray-900 p-10 w-full text-white">
+    <h1 class="text-5xl font-bold mb-5">Nostra</h1>
+    <p class=" text-3xl font-medium mb-5">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+    <div class="mb-5 text-3xl flex gap-10">
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+    </div>    
+    <p class=" text-3xl">@ 2023 Nostra.com</p>
+ 
+</section>
 
 
 

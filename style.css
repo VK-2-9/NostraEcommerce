@@ -5,14 +5,169 @@
 }
 
 /* Navbar section */
-.navbar p:hover{
+.navbar a:hover, .sidenav a:hover{
     cursor: pointer;
     text-decoration: underline;
 }
 
 
+/*New arrivals section*/
+
+.na-container{
+    position: relative;
+   
+    border-radius: 10px;
+}
+.na-container img{
+    width: 45vh;
+    border-radius: 10px;
+
+}
+.na-overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+    z-index: 5;
+    border-radius: 10px;
+}
+.na-container button{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 6;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.na-container button:hover{
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    background-color: black;
+    transition: 1s;
+}
+
+/*Most wanted section*/
+.most-wanted{
+    overflow-x:auto;
+    white-space: nowrap;  
+}
+
+.mw-container{
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.mw-container img{
+ 
+    border-radius: 10px;
+}
+
+.mw-container p{
+    position: absolute;
+    background-color: red;
+    color:white;
+    border-radius: 7px;
+    top: 0;
+    text-align: center;
+   
+    
+}
+.mw-container i{
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    
+}
+
+
+/* Limited offer section */
+.limited-offer button{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+.limited-offer button:hover{
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    background-color: black;
+    transition: 1s;
+}
+
+/* Newsletter section */
+
+.newsletter button{
+    background-color: #111827;
+    color: white;
+}
+
+.newsletter button:hover{
+    background-color: transparent;
+    color: #111827;
+    border: solid 2px #111827;
+    background-color: white;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:600px) {
     *{
-        font-size: 10px;
+     font-size: 6px;   
     }
+  
+    
+/* Nabar */
+  .navbar h1{
+    font-size: 20px;
+  }  
+  .sidenav h1{
+    font-size: 20px;
+  }
+  .sidenav a{
+    font-size: 15px;
+  }
+  /* slider */
+  
+  .slider i{
+    font-size: 50px;
+  }
+  .slider-content h1{
+    font-size: 14px;
+    
+  }
+  .slider-content button, .slider-content p{
+font-size: 10px;
+  }
+
+  /* Brands */
+  .brands h1{
+    font-size: 20px;
+    margin-bottom: 9px;
+  }
+
+  /* Qualities */
+  .qualities i{
+    font-size: 12px;
+  }
+
+  /* Arrival section */
+.arrival h1, .mw h1{
+    font-size: 20px;
+}
+
 }
