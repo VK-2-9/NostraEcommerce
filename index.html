@@ -38,8 +38,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
     <div class="hidden gap-9 md:flex">
         <a href="./index.html">Home</a>
-        <a>New Arrival</a>
-        <a>Most Wanted</a>
+        <a href="#new-arrival">New Arrival</a>
+        <a href="#most-wanted">Most Wanted</a>
         <a>Collections</a>
         <a>Contact Us</a>
     </div>
@@ -47,33 +47,37 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
 <!--side navbar-->
 <section >
-    <div id="sidenav" class="sidenav bg-gray-800 p-10 flex flex-col gap-16 text-white w-1/2 fixed z-50 h-full top-0 transition-all duration-1000" style="left: -50%;" >
+    <div id="sidenav" class="sidenav bg-gray-800 p-10 gap-16 flex flex-col  text-white w-1/2 fixed z-50 h-full top-0 transition-all duration-1000 justify-start -left-1/2" >
         <h1 id="menu-close" class="text-3xl text-right">X</h1>
-        <a href="./index.html">Home</a>
-        <a>New Arrival</a>
-        <a>Most Wanted</a>
-        <a>Collections</a>
-        <a>Contact Us</a>
+        <a href="./index.html" class="w-max">Home</a>
+        <a  href="#new-arrival" class="w-max">New Arrival</a>
+        <a href="#most-wanted" class="w-max">Most Wanted</a>
+        <a class="w-max">Collections</a>
+        <a class="w-max">Contact Us</a>
     </div>
 </section>
 
 <!--slider section-->
 
-<section class="slider m-5 mt-0 relative " >
-    <img  src="./images/main-slider.jpg" style="width: 100%;">
+<section class="slider m-5 mt-0 relative min-w-full " >
+    <div class="slider-images flex gap-1  " >
+        <img id="img1" src="./images/main-slider1.jpg" class=" " style="width:100vw ;"  >
+        <img id="img2" src="./images/main-slider2.jpg" class=" " style="width:100vw ;" >
+        <img id="img3"  src="./images/main-slider1.jpg"  class=" " style="width:100vw ;">
+    </div>        
 
-    <div class="slider-left   text-white  text-8xl absolute top-1/2 left-20 transform -translate-y-1/2">
+    <div id="slider-left" class="slider-left   text-white  text-8xl absolute top-1/2 left-20 transform -translate-y-1/2">
         <i  class="fa-solid fa-angle-left"></i>
     </div>
 
-    <div class="slider-content text-white absolute top-1/2 text-center transform -translate-y-1/2" style="left:25%">
+    <div class="slider-content text-white absolute top-1/2 text-center transform -translate-y-1/2 left-1/2 -translate-x-1/2" >
         <h1 class="text-6xl font-bold">Level up your style with our</h1>
         <p class="font-semibold mt-5 text-2xl">Summer Collections</p>
         <button class="bg-white border-2 text-black p-3 mt-2 hover:opacity-90 duration-1000  hover:text-white hover:bg-black">Shop Now➜</button>
 
     </div>
 
-    <div class="slider-right text-8xl text-white absolute top-1/2 right-20 transform -translate-y-1/2" >
+    <div id="slider-right" class="slider-right text-8xl text-white absolute top-1/2 right-20 transform -translate-y-1/2" >
         <i  class="fa-solid fa-angle-right"></i>
     </div>  
     
@@ -159,7 +163,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         
 
 <!--new arrivals-->
-<section class="arrival m-5 mt-12">
+<section id="new-arrival" class=" m-5 mt-12">
     <h1 class="font-bold text-2xl">New Arrivals</h1>
     <div class="flex justify-between gap-8 mt-8">
         <div class="na-container">
@@ -190,7 +194,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
 
 <!--Most wanted-->
-<section class="mw m-5 mt-12">
+<section id="most-wanted" class="mw m-5 mt-12">
     <h1 class="font-bold text-2xl">Most Wanted</h1>
     <div class="most-wanted mt-8 ">
 
