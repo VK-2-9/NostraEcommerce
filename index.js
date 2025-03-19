@@ -9,7 +9,7 @@ offerClose.addEventListener("click", function () {
 
 //sidenav
 var menuOpen = document.getElementById("menu-open");
-var sidnav = document.getElementById("sidenav");
+var sidenav = document.getElementById("sidenav");
 var menuClose = document.getElementById("menu-close");
 
 menuOpen.addEventListener("click", function () {
@@ -29,7 +29,7 @@ var searchBox = document.getElementById("search-box");
 var collectionContainer = document.querySelectorAll(".collection-container");
 
 searchBox.addEventListener("keyup", function () {
-  collectionContainer.forEach((container)=> {
+  collectionContainer.forEach((container) => {
     var dressName = container.querySelector("h1").innerHTML.toUpperCase();
     var enteredText = searchBox.value.toUpperCase();
     if (dressName.includes(enteredText)) {
@@ -40,49 +40,4 @@ searchBox.addEventListener("keyup", function () {
   });
 });
 
-
-
 //Check function
-
-var collectionContainer= document.querySelectorAll(".collection-container");
-var check=document.getElementsByName("checkbox");
-var newProducts=[]
-
-check.forEach((check)=>{
-  check.addEventListener("click",()=>{
-
-    if (check.checked){
-
-      collectionContainer.forEach(container=>{
-        var tags=container.querySelector("tags");
-        var tagsText=tags.innerHTML;
-        if(tagsText.includes(check.value)){
-            newProducts.push(container)
-            console.log(newProducts)
-            collectionContainer.innerHTML=newProducts
-        }
-       
-      })
-  
-    }
-
-  })
-})
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
