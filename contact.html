@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!--font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<!--font awesome link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--Tailwind css link-->
+<link
+      href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+"
+      rel="stylesheet"
+    />
+
+    <!--styles-->
+    <style>
+        /*Nabar*/
+        .navbar a:hover, .sidenav a:hover{
+            text-decoration: underline;
+        }
+
+        /* Newsletter section */
+
+.newsletter button{
+    background-color: #111827;
+    color: white;
+}
+
+.newsletter button:hover{
+    background-color: transparent;
+    color: #111827;
+    border: solid 1px #111827;
+    background-color: white;
+    transition: 1s;
+}
+
+    </style>
+</head>
+
+
+<body>
+    <!-- offer section -->
+     <section id="offer" class=" bg-gray-800 text-white text-xs md:text-xl flex h-10 justify-center align-middle items-center gap-28" >
+        <h1 >Sign up and <span class="font-bold"> GET 20% OFF</span> for your first Order</h1>
+        <p id="offer-close" class="cursor-pointer "  >X</p>
+     </section>
+<!--navbar section-->
+<section class="navbar flex justify-between items-center  sticky z-10  top-0 bg-white p-2 md:p-5 ">
+    <h1 class="text-xl md:text-2xl font-bold ">Nostra</h1>
+
+    <i id="menu-open" class="fa-solid fa-bars md:hidden text-xl md:text-4xl"></i>
+
+    <div class="hidden gap-9 md:flex">
+        <a href="./index.html">Home</a>
+        <a href="./index.html">New Arrival</a>
+        <a href="#most-wanted">Most Wanted</a>
+        <a href="./collection.html">Collections</a>
+        <a href="./contact.html">Contact Us</a>
+    </div>
+</section>
+
+<!--side navbar-->
+<section >
+    <div id="sidenav" class="sidenav bg-gray-800 p-10 gap-10 flex flex-col  text-white w-1/2 fixed z-50 h-full top-0 transition-all duration-1000 justify-start -left-1/2" >
+        <h1 id="menu-close" class="text-3xl text-right">X</h1>
+        <a href="./index.html" class="w-max">Home</a>
+        <a  href="./index.html" class="w-max">New Arrival</a>
+        <a href="./index.html" class="w-max">Most Wanted</a>
+        <a href="./collection.html" class="w-max">Collections</a>
+        <a href="contact.html" class="w-max">Contact Us</a>
+    </div>
+</section>
+
+
+<!--contact-->
+
+
+      <div class="w-3/4 bg-gray-800 mx-auto my-10 p-5 rounded-md shadow-sm">
+        <div class="text-center">
+          <h1 class="my-3 text-3xl font-semibold text-white dark:text-gray-200">
+            Contact Us
+          </h1>
+          
+        </div>
+        <div class="m-7">
+          <form  id="form">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+            <div class="mb-6">
+              <label for="name" class="block mb-2 text-sm text-white dark:text-gray-400">Full Name</label>
+              <input type="text" name="name" id="name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block mb-2 text-sm text-white dark:text-gray-400">Email Address</label>
+              <input type="email" name="email" id="email"  required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+            </div>
+            
+            <div class="mb-6">
+              <label for="message" class="block mb-2 text-sm text-white dark:text-gray-400">Your Message</label>
+  
+              <textarea rows="5" name="message" id="message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+            </div>
+            <div class="mb-6">
+              <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                Submit
+              </button>
+            </div>
+            <p class="text-base text-center text-gray-400" id="result"></p>
+          </form>
+        </div>
+      </div>
+   
+
+
+
+<!--newsletter section-->
+<section class="newsletter m-5 mt-20 text-center">
+    <h1 class="md:text-5xl font-bold mb-5">Join our News Letter</h1>
+    <p class="md:text-2xl mb-5">Signup for our email newspaper to get exclusive discounts, updates, and more </p>
+    <input type="text" class="border-2 border-black w-3/4 h-10  p-2 md:mb-4"><br>
+    <button class="text-xs p-2 w-24 md:text-xl md:w-36 mt-4  rounded-xl">Subscribe ➜</button>
+
+</section>
+
+<!--footer section-->
+<section class="bg-gray-900 p-10 w-full text-white">
+    <h1 class="md:text-5xl font-bold mb-5">Nostra</h1>
+    <p class=" md:text-3xl font-medium mb-5">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+    <div class="mb-5 md:text-3xl flex gap-10">
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+    </div>    
+    <p class=" md:text-3xl">@ 2023 Nostra.com</p>
+ 
+</section>
+
+
+
+
+<script src="./index.js"></script>
+</body>
+</html>
